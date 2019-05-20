@@ -50,7 +50,7 @@ public class giftUtil {
     }
 
     //十六进制转换二进制字符串
-    public static String hexStr2BinStr(String hexStr) {
+    static String hexStr2BinStr(String hexStr) {
         hexStr = hexStr.toUpperCase();
         String str = "0123456789ABCDEF";
         char[] hexs = hexStr.toCharArray();
@@ -76,7 +76,7 @@ public class giftUtil {
     }
 
     //二进制字符串转换十六进制字符串
-    public static String binStr2HexStr(String binStr) {
+    static String binStr2HexStr(String binStr) {
         String str = "0123456789ABCDEF";
         StringBuilder result = new StringBuilder("");
         for (int i = 0; i < binStr.length() / 4; i++) {
